@@ -1,0 +1,250 @@
+{
+    "messages": [
+      {
+        "id": "MSG001",
+        "robotId": "HRM001",
+        "timestamp": "2024-07-07T10:15:30Z",
+        "type": "status",
+        "content": "Patrol completed successfully."
+      },
+      {
+        "id": "MSG002",
+        "robotId": "HRM001",
+        "timestamp": "2024-07-07T10:30:45Z",
+        "type": "command",
+        "content": "Return to charging station."
+      },
+      {
+        "id": "MSG003",
+        "robotId": "HRM002",
+        "timestamp": "2024-07-07T11:00:00Z",
+        "type": "alert",
+        "content": "Low battery detected. Initiating power-saving mode."
+      },
+      {
+        "id": "MSG004",
+        "robotId": "HRM003",
+        "timestamp": "2024-07-07T11:15:00Z",
+        "type": "status",
+        "content": "Routine maintenance check completed."
+      },
+      {
+        "id": "MSG005",
+        "robotId": "HRM004",
+        "timestamp": "2024-07-07T11:30:00Z",
+        "type": "command",
+        "content": "Initiate security protocol Alpha."
+      },
+      {
+        "id": "MSG006",
+        "robotId": "HRM005",
+        "timestamp": "2024-07-07T11:45:00Z",
+        "type": "status",
+        "content": "Battery fully charged."
+      },
+      {
+        "id": "MSG007",
+        "robotId": "HRM006",
+        "timestamp": "2024-07-07T12:00:00Z",
+        "type": "alert",
+        "content": "Obstacle detected in pathway."
+      },
+      {
+        "id": "MSG008",
+        "robotId": "HRM007",
+        "timestamp": "2024-07-07T12:15:00Z",
+        "type": "status",
+        "content": "Temperature within normal range."
+      },
+      {
+        "id": "MSG009",
+        "robotId": "HRM008",
+        "timestamp": "2024-07-07T12:30:00Z",
+        "type": "command",
+        "content": "Perform diagnostic scan."
+      },
+      {
+        "id": "MSG010",
+        "robotId": "HRM009",
+        "timestamp": "2024-07-07T12:45:00Z",
+        "type": "alert",
+        "content": "Unexpected motion detected."
+      },
+      {
+        "id": "MSG011",
+        "robotId": "HRM010",
+        "timestamp": "2024-07-07T13:00:00Z",
+        "type": "status",
+        "content": "Camera calibration successful."
+      },
+      {
+        "id": "MSG012",
+        "robotId": "HRM011",
+        "timestamp": "2024-07-07T13:15:00Z",
+        "type": "command",
+        "content": "Start cleaning sequence."
+      },
+      {
+        "id": "MSG013",
+        "robotId": "HRM012",
+        "timestamp": "2024-07-07T13:30:00Z",
+        "type": "alert",
+        "content": "High temperature detected in engine."
+      },
+      {
+        "id": "MSG014",
+        "robotId": "HRM013",
+        "timestamp": "2024-07-07T13:45:00Z",
+        "type": "status",
+        "content": "All systems functional."
+      },
+      {
+        "id": "MSG015",
+        "robotId": "HRM014",
+        "timestamp": "2024-07-07T14:00:00Z",
+        "type": "command",
+        "content": "Prepare for transport."
+      },
+      {
+        "id": "MSG016",
+        "robotId": "HRM015",
+        "timestamp": "2024-07-07T14:15:00Z",
+        "type": "status",
+        "content": "Navigational update completed."
+      },
+      {
+        "id": "MSG017",
+        "robotId": "HRM016",
+        "timestamp": "2024-07-07T14:30:00Z",
+        "type": "alert",
+        "content": "Battery below 20%."
+      },
+      {
+        "id": "MSG018",
+        "robotId": "HRM017",
+        "timestamp": "2024-07-07T14:45:00Z",
+        "type": "status",
+        "content": "Firmware update successful."
+      },
+      {
+        "id": "MSG019",
+        "robotId": "HRM018",
+        "timestamp": "2024-07-07T15:00:00Z",
+        "type": "command",
+        "content": "Deactivate surveillance mode."
+      },
+      {
+        "id": "MSG020",
+        "robotId": "HRM019",
+        "timestamp": "2024-07-07T15:15:00Z",
+        "type": "alert",
+        "content": "Unexpected shutdown detected."
+      },
+      {
+        "id": "MSG021",
+        "robotId": "HRM020",
+        "timestamp": "2024-07-07T15:30:00Z",
+        "type": "status",
+        "content": "Patrol route updated."
+      },
+      {
+        "id": "MSG022",
+        "robotId": "HRM021",
+        "timestamp": "2024-07-07T15:45:00Z",
+        "type": "command",
+        "content": "Initiate self-diagnostic."
+      },
+      {
+        "id": "MSG023",
+        "robotId": "HRM022",
+        "timestamp": "2024-07-07T16:00:00Z",
+        "type": "alert",
+        "content": "Communication error detected."
+      },
+      {
+        "id": "MSG024",
+        "robotId": "HRM023",
+        "timestamp": "2024-07-07T16:15:00Z",
+        "type": "status",
+        "content": "All sensors calibrated."
+      },
+      {
+        "id": "MSG025",
+        "robotId": "HRM024",
+        "timestamp": "2024-07-07T16:30:00Z",
+        "type": "command",
+        "content": "Return to base."
+      },
+      {
+        "id": "MSG026",
+        "robotId": "HRM025",
+        "timestamp": "2024-07-07T16:45:00Z",
+        "type": "status",
+        "content": "Visual inspection completed."
+      },
+      {
+        "id": "MSG027",
+        "robotId": "HRM026",
+        "timestamp": "2024-07-07T17:00:00Z",
+        "type": "alert",
+        "content": "Motor temperature rising."
+      },
+      {
+        "id": "MSG028",
+        "robotId": "HRM027",
+        "timestamp": "2024-07-07T17:15:00Z",
+        "type": "status",
+        "content": "Positioning system operational."
+      },
+      {
+        "id": "MSG029",
+        "robotId": "HRM028",
+        "timestamp": "2024-07-07T17:30:00Z",
+        "type": "command",
+        "content": "Start data upload."
+      },
+      {
+        "id": "MSG030",
+        "robotId": "HRM029",
+        "timestamp": "2024-07-07T17:45:00Z",
+        "type": "alert",
+        "content": "Sensor error detected."
+      },
+      {
+        "id": "MSG031",
+        "robotId": "HRM030",
+        "timestamp": "2024-07-07T18:00:00Z",
+        "type": "status",
+        "content": "Obstacle cleared from path."
+      },
+      {
+        "id": "MSG032",
+        "robotId": "HRM031",
+        "timestamp": "2024-07-07T18:15:00Z",
+        "type": "command",
+        "content": "Engage manual control."
+      },
+      {
+        "id": "MSG033",
+        "robotId": "HRM032",
+        "timestamp": "2024-07-07T18:30:00Z",
+        "type": "alert",
+        "content": "High humidity detected."
+      },
+      {
+        "id": "MSG034",
+        "robotId": "HRM033",
+        "timestamp": "2024-07-07T18:45:00Z",
+        "type": "status",
+        "content": "System reboot completed."
+      },
+      {
+        "id": "MSG035",
+        "robotId": "HRM034",
+        "timestamp": "2024-07-07T19:00:00Z",
+        "type": "command",
+        "content": "Switch to backup power."
+      }
+     
+    ]
+}
