@@ -268,6 +268,8 @@ function selectRobot(robot) {
     if (marker) {
         marker.openPopup();
     }
+
+    toggleDetails(true);
 }
 
 function updateRobotDetails(robot) {
@@ -315,8 +317,29 @@ function unselectRobot() {
     robotDetails.classList.add('hidden');
     robotDetails.style.display = 'none';
     map.setView([41.8781, -87.6298], 11); // Reset map view
+
+    toggleDetails(false);
 }
 
+function toggleSidebar() {
+    document.body.classList.toggle('sidebar-hidden');
+    map.invalidateSize();
+}
+
+function toggleDetails(open) {
+    const detailsPanel = document.getElementById('robot-details');
+    if (open) {
+        detailsPanel.classList.add('open');
+        document.body.classList.add('details-open');
+    } else {
+        detailsPanel.classList.remove('open');
+        document.body.classList.remove('details-open');
+    }
+    map.invalidateSize();
+}
+
+// Add event listener for the menu button
+document.getElementById('menu-button').addEventListener('click', toggleSidebar);
 
   // 14. Search Functionality
   document.getElementById('robot-search').addEventListener('input', function(e) {

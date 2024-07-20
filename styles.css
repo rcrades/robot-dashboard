@@ -24,60 +24,85 @@ body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
-}
-
-/* CSS Section 3 - Typography */
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 0.5em;
-}
-
-/* CSS Section 4 - Layout */
-body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: var(--header-height); /* Add padding to account for the fixed header */
+    padding-top: var(--header-height);
+    overflow: hidden;
 }
 
 main {
     display: flex;
     flex: 1;
     height: calc(100vh - var(--header-height));
+    position: relative;
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 #robot-sidebar {
     width: var(--sidebar-width);
-    background-color: rgba(44, 44, 44, 0.7); /* Transparent background */
+    background-color: rgba(44, 44, 44, 0.7);
     padding: 20px;
-    overflow-y: auto; /* Allow scrolling */
-    position: fixed; /* Fix the sidebar position */
-    top: var(--header-height); /* Adjust for header height */
-    bottom: 0; /* Stick to the bottom */
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+#map-wrapper {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    transition: margin 0.3s ease;
 }
 
 #map-container {
-    flex: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    margin-left: var(--sidebar-width); /* Adjust for the sidebar width */
     background-color: var(--bg-secondary);
+    z-index: 5;
 }
 
 #robot-details {
-    width: 25%;
+    width: 0;
     padding: 20px;
-    background-color: rgba(44, 44, 44, 0.7); /* Transparent background */
+    background-color: rgba(44, 44, 44, 0.7);
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
-    position: fixed; /* Fix the details panel position */
-    top: var(--header-height); /* Adjust for header height */
-    right: 0;
-    bottom: 0; /* Stick to the bottom */
-    overflow-y: auto; /* Allow scrolling */
-    z-index: 1000; /* Ensure it's above the map */
+    overflow-y: auto;
+    transition: width 0.3s ease;
+    z-index: 10;
+}
+
+#robot-details.open {
+    width: 25%;
+}
+
+.sidebar-hidden #robot-sidebar {
+    width: 0;
+    padding: 0;
+}
+
+.details-open #map-wrapper {
+    margin-right: 25%;
 }
 
 /* CSS Section 5 - Header */
@@ -203,26 +228,32 @@ header h1 {
 /* CSS Section 7 - Sidebar */
 #robot-sidebar {
     width: var(--sidebar-width);
-    background-color: rgba(44, 44, 44, 0.7); /* Transparent background */
+    background-color: rgba(44, 44, 44, 0.7);
     padding: 20px;
     overflow-y: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 /* CSS Section 8 - Robot List */
 #robot-list {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    flex-grow: 1;
 }
 
 .robot-item {
-    margin-bottom: 10px;
     padding: 10px;
     border-bottom: 1px solid var(--text-secondary);
     cursor: pointer;
-    position: relative;
-}
-
-.robot-item:first-child {
-    margin-top: 0;
 }
 
 .robot-item:hover {
@@ -523,4 +554,13 @@ header h1 {
 
 .leaflet-control-zoom a:hover {
     background-color: rgba(255, 255, 255, 1);
+}
+
+#particles-js {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }

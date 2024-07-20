@@ -26,11 +26,17 @@
         </div>
     </header>
     <main>
+        <div id="particles-js"></div>
         <aside id="robot-sidebar">
-            <ul id="robot-list"></ul>
+            <div id="sidebar-content">
+                <h2>Robots</h2>
+                <ul id="robot-list"></ul>
+            </div>
         </aside>
-        <section id="map-container"></section>
-        <section id="robot-details" class="hidden">
+        <div id="map-wrapper">
+            <section id="map-container"></section>
+        </div>
+        <section id="robot-details">
             <h2 id="robot-name">Robot Name</h2>
             <p id="robot-status">Status: </p>
             <p id="robot-battery">Battery: </p>
@@ -42,7 +48,6 @@
     <div id="loading-overlay" class="hidden">
         <div class="spinner"></div>
     </div>
-    <div id="particles-js"></div> <!-- Particle background container -->
     <!-- Include Particles.js library -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
