@@ -1,7 +1,7 @@
 
 // Natviate to area
 
-    cd /Users/ryanrademann/Downloads/humanoid_robot_app
+    cd /Users/ryanrademann/Documents/GitHub/robot-dashboard
 
 // Fire Up Server
 
