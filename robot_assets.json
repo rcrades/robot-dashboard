@@ -1,244 +1,352 @@
 {
-    "robots": [
-      {
-        "id": "HRM001",
-        "name": "Optimus",
-        "model": "HumanoidX-1000",
-        "status": "active",
-        "battery": 87,
-        "location": {
-          "lat": 41.8781,
-          "lng": -87.6298
-        },
-        "lastMaintenance": "2024-06-15"
+  "robots": [
+    {
+      "id": "HRM001",
+      "name": "Optimus",
+      "model": "HumanoidX-1000",
+      "status": "active",
+      "battery": 87,
+      "location": {
+        "lat": 41.8781,
+        "lng": -87.6298
       },
-      {
-        "id": "HRM002",
-        "name": "Sentinel",
-        "model": "GuardianPro-500",
-        "status": "charging",
-        "battery": 23,
-        "location": {
-          "lat": 41.8857,
-          "lng": -87.6229
-        },
-        "lastMaintenance": "2024-07-01"
+      "lastMaintenance": "2024-06-15"
+    },
+    {
+      "id": "HRM002",
+      "name": "Sentinel",
+      "model": "GuardianPro-500",
+      "status": "charging",
+      "battery": 23,
+      "location": {
+        "lat": 41.8857,
+        "lng": -87.6229
       },
-      {
-        "id": "HRM003",
-        "name": "Atlas",
-        "model": "WorkerBot-2000",
-        "status": "active",
-        "battery": 65,
-        "location": {
-          "lat": 41.9000,
-          "lng": -87.6344
-        },
-        "lastMaintenance": "2024-06-28"
+      "lastMaintenance": "2024-07-01"
+    },
+    {
+      "id": "HRM003",
+      "name": "Atlas",
+      "model": "WorkerBot-2000",
+      "status": "active",
+      "battery": 65,
+      "location": {
+        "lat": 41.9000,
+        "lng": -87.6344
       },
-      {
-        "id": "HRM004",
-        "name": "Nexus",
-        "model": "CompanionDroid-X",
-        "status": "standby",
-        "battery": 100,
-        "location": {
-          "lat": 41.8639,
-          "lng": -87.6107
-        },
-        "lastMaintenance": "2024-07-03"
+      "lastMaintenance": "2024-06-28"
+    },
+    {
+      "id": "HRM004",
+      "name": "Nexus",
+      "model": "CompanionDroid-X",
+      "status": "standby",
+      "battery": 100,
+      "location": {
+        "lat": 41.8639,
+        "lng": -87.6107
       },
-      {
-        "id": "HRM005",
-        "name": "Cypher",
-        "model": "SecuritySentry-700",
-        "status": "active",
-        "battery": 78,
-        "location": {
-          "lat": 41.9136,
-          "lng": -87.6454
-        },
-        "lastMaintenance": "2024-06-20"
+      "lastMaintenance": "2024-07-03"
+    },
+    {
+      "id": "HRM005",
+      "name": "Cypher",
+      "model": "SecuritySentry-700",
+      "status": "active",
+      "battery": 78,
+      "location": {
+        "lat": 41.9136,
+        "lng": -87.6454
       },
-      {
-        "id": "HRM006",
-        "name": "Nova",
-        "model": "MedAssist-3000",
-        "status": "maintenance",
-        "battery": 45,
-        "location": {
-          "lat": 41.8349,
-          "lng": -87.6270
-        },
-        "lastMaintenance": "2024-07-07"
+      "lastMaintenance": "2024-06-20"
+    },
+    {
+      "id": "HRM006",
+      "name": "Nova",
+      "model": "MedAssist-3000",
+      "status": "maintenance",
+      "battery": 45,
+      "location": {
+        "lat": 41.8349,
+        "lng": -87.6270
       },
-      {
-        "id": "HRM007",
-        "name": "Orion",
-        "model": "ExplorerBot-X1",
-        "status": "active",
-        "battery": 92,
-        "location": {
-          "lat": 41.8919,
-          "lng": -87.6051
-        },
-        "lastMaintenance": "2024-06-25"
+      "lastMaintenance": "2024-07-07"
+    },
+    {
+      "id": "HRM007",
+      "name": "Orion",
+      "model": "ExplorerBot-X1",
+      "status": "active",
+      "battery": 92,
+      "location": {
+        "lat": 41.8919,
+        "lng": -87.6051
       },
-      {
-        "id": "HRM008",
-        "name": "Echo",
-        "model": "CommLink-500",
-        "status": "active",
-        "battery": 56,
-        "location": {
-          "lat": 41.8713,
-          "lng": -87.6612
-        },
-        "lastMaintenance": "2024-06-30"
+      "lastMaintenance": "2024-06-25"
+    },
+    {
+      "id": "HRM008",
+      "name": "Echo",
+      "model": "CommLink-500",
+      "status": "active",
+      "battery": 56,
+      "location": {
+        "lat": 41.8713,
+        "lng": -87.6612
       },
-      {
-        "id": "HRM009",
-        "name": "Quantum",
-        "model": "DataAnalyst-9000",
-        "status": "charging",
-        "battery": 12,
-        "location": {
-          "lat": 41.9214,
-          "lng": -87.6359
-        },
-        "lastMaintenance": "2024-07-02"
+      "lastMaintenance": "2024-06-30"
+    },
+    {
+      "id": "HRM009",
+      "name": "Quantum",
+      "model": "DataAnalyst-9000",
+      "status": "charging",
+      "battery": 12,
+      "location": {
+        "lat": 41.9214,
+        "lng": -87.6359
       },
-      {
-        "id": "HRM010",
-        "name": "Zenith",
-        "model": "SkyWatcher-1",
-        "status": "active",
-        "battery": 88,
-        "location": {
-          "lat": 41.8961,
-          "lng": -87.6543
-        },
-        "lastMaintenance": "2024-06-18"
+      "lastMaintenance": "2024-07-02"
+    },
+    {
+      "id": "HRM010",
+      "name": "Zenith",
+      "model": "SkyWatcher-1",
+      "status": "active",
+      "battery": 88,
+      "location": {
+        "lat": 41.8961,
+        "lng": -87.6543
       },
-      {
-        "id": "HRM011",
-        "name": "Titan",
-        "model": "HeavyLifter-5000",
-        "status": "active",
-        "battery": 71,
-        "location": {
-          "lat": 41.8587,
-          "lng": -87.6135
-        },
-        "lastMaintenance": "2024-06-22"
+      "lastMaintenance": "2024-06-18"
+    },
+    {
+      "id": "HRM011",
+      "name": "Titan",
+      "model": "HeavyLifter-5000",
+      "status": "active",
+      "battery": 71,
+      "location": {
+        "lat": 41.8587,
+        "lng": -87.6135
       },
-      {
-        "id": "HRM012",
-        "name": "Pulse",
-        "model": "EnergyBot-X",
-        "status": "standby",
-        "battery": 100,
-        "location": {
-          "lat": 41.9178,
-          "lng": -87.6757
-        },
-        "lastMaintenance": "2024-07-05"
+      "lastMaintenance": "2024-06-22"
+    },
+    {
+      "id": "HRM012",
+      "name": "Pulse",
+      "model": "EnergyBot-X",
+      "status": "standby",
+      "battery": 100,
+      "location": {
+        "lat": 41.9178,
+        "lng": -87.6757
       },
-      {
-        "id": "HRM013",
-        "name": "Fusion",
-        "model": "MultiTask-3000",
-        "status": "active",
-        "battery": 82,
-        "location": {
-          "lat": 41.8299,
-          "lng": -87.6338
-        },
-        "lastMaintenance": "2024-06-27"
+      "lastMaintenance": "2024-07-05"
+    },
+    {
+      "id": "HRM013",
+      "name": "Fusion",
+      "model": "MultiTask-3000",
+      "status": "active",
+      "battery": 82,
+      "location": {
+        "lat": 41.8299,
+        "lng": -87.6338
       },
-      {
-        "id": "HRM014",
-        "name": "Nebula",
-        "model": "AstroGuide-1",
-        "status": "maintenance",
-        "battery": 35,
-        "location": {
-          "lat": 41.8925,
-          "lng": -87.6262
-        },
-        "lastMaintenance": "2024-07-06"
+      "lastMaintenance": "2024-06-27"
+    },
+    {
+      "id": "HRM014",
+      "name": "Nebula",
+      "model": "AstroGuide-1",
+      "status": "maintenance",
+      "battery": 35,
+      "location": {
+        "lat": 41.8925,
+        "lng": -87.6262
       },
-      {
-        "id": "HRM015",
-        "name": "Vortex",
-        "model": "CleanBot-2000",
-        "status": "active",
-        "battery": 67,
-        "location": {
-          "lat": 41.8705,
-          "lng": -87.6818
-        },
-        "lastMaintenance": "2024-06-29"
+      "lastMaintenance": "2024-07-06"
+    },
+    {
+      "id": "HRM015",
+      "name": "Vortex",
+      "model": "CleanBot-2000",
+      "status": "active",
+      "battery": 67,
+      "location": {
+        "lat": 41.8705,
+        "lng": -87.6818
       },
-      {
-        "id": "HRM016",
-        "name": "Helix",
-        "model": "DNAScanner-X",
-        "status": "charging",
-        "battery": 18,
-        "location": {
-          "lat": 41.9107,
-          "lng": -87.6076
-        },
-        "lastMaintenance": "2024-07-04"
+      "lastMaintenance": "2024-06-29"
+    },
+    {
+      "id": "HRM016",
+      "name": "Helix",
+      "model": "DNAScanner-X",
+      "status": "charging",
+      "battery": 18,
+      "location": {
+        "lat": 42.1711,
+        "lng": -87.8445
       },
-      {
-        "id": "HRM017",
-        "name": "Spark",
-        "model": "FireFighter-3000",
-        "status": "active",
-        "battery": 95,
-        "location": {
-          "lat": 41.8505,
-          "lng": -87.6512
-        },
-        "lastMaintenance": "2024-06-19"
+      "lastMaintenance": "2024-07-04"
+    },
+    {
+      "id": "HRM017",
+      "name": "Spark",
+      "model": "FireFighter-3000",
+      "status": "active",
+      "battery": 95,
+      "location": {
+        "lat": 41.8505,
+        "lng": -87.6512
       },
-      {
-        "id": "HRM018",
-        "name": "Hydra",
-        "model": "WaterWorks-X1",
-        "status": "active",
-        "battery": 79,
-        "location": {
-          "lat": 41.8985,
-          "lng": -87.6241
-        },
-        "lastMaintenance": "2024-06-24"
+      "lastMaintenance": "2024-06-19"
+    },
+    {
+      "id": "HRM018",
+      "name": "Hydra",
+      "model": "WaterWorks-X1",
+      "status": "active",
+      "battery": 79,
+      "location": {
+        "lat": 41.8985,
+        "lng": -87.6241
       },
-      {
-        "id": "HRM019",
-        "name": "Axiom",
-        "model": "LogicPro-5000",
-        "status": "standby",
-        "battery": 100,
-        "location": {
-          "lat": 41.8393,
-          "lng": -87.6327
-        },
-        "lastMaintenance": "2024-07-03"
+      "lastMaintenance": "2024-06-24"
+    },
+    {
+      "id": "HRM019",
+      "name": "Axiom",
+      "model": "LogicPro-5000",
+      "status": "standby",
+      "battery": 100,
+      "location": {
+        "lat": 41.8393,
+        "lng": -87.6327
       },
-      {
-        "id": "HRM020",
-        "name": "Phoenix",
-        "model": "Regenerator-X",
-        "status": "active",
-        "battery": 89,
-        "location": {
-          "lat": 41.9056,
-          "lng": -87.6499
-        },
-        "lastMaintenance": "2024-06-26"
-      }
-    ]
-  }
+      "lastMaintenance": "2024-07-03"
+    },
+    {
+      "id": "HRM020",
+      "name": "Phoenix",
+      "model": "Regenerator-X",
+      "status": "active",
+      "battery": 89,
+      "location": {
+        "lat": 41.9056,
+        "lng": -87.6499
+      },
+      "lastMaintenance": "2024-06-26"
+    },
+    {
+      "id": "HRM021",
+      "name": "Aurora",
+      "model": "NightPatrol-1000",
+      "status": "active",
+      "battery": 76,
+      "location": {
+        "lat": 41.7606,
+        "lng": -88.3201
+      },
+      "lastMaintenance": "2024-07-08"
+    },
+    {
+      "id": "HRM022",
+      "name": "Bolingbrook",
+      "model": "SuburbGuard-X",
+      "status": "charging",
+      "battery": 31,
+      "location": {
+        "lat": 41.6986,
+        "lng": -88.0683
+      },
+      "lastMaintenance": "2024-07-09"
+    },
+    {
+      "id": "HRM023",
+      "name": "Wheaton",
+      "model": "ParkRanger-3000",
+      "status": "active",
+      "battery": 92,
+      "location": {
+        "lat": 41.8662,
+        "lng": -88.1070
+      },
+      "lastMaintenance": "2024-07-10"
+    },
+    {
+      "id": "HRM024",
+      "name": "Lisle",
+      "model": "ArboretumBot-1",
+      "status": "standby",
+      "battery": 100,
+      "location": {
+        "lat": 41.7914,
+        "lng": -88.0881
+      },
+      "lastMaintenance": "2024-07-11"
+    },
+    {
+      "id": "HRM025",
+      "name": "Brewmaster",
+      "model": "BeerBot-3000",
+      "status": "active",
+      "battery": 88,
+      "location": {
+        "lat": 43.0389,
+        "lng": -87.9065
+      },
+      "lastMaintenance": "2024-07-12"
+    },
+    {
+      "id": "HRM026",
+      "name": "Giannis",
+      "model": "DunkMaster-34",
+      "status": "active",
+      "battery": 95,
+      "location": {
+        "lat": 43.0436,
+        "lng": -87.9172
+      },
+      "lastMaintenance": "2024-07-13"
+    },
+    {
+      "id": "HRM027",
+      "name": "Harley",
+      "model": "RoadKing-X",
+      "status": "charging",
+      "battery": 42,
+      "location": {
+        "lat": 43.0389,
+        "lng": -87.9064
+      },
+      "lastMaintenance": "2024-07-14"
+    },
+    {
+      "id": "HRM028",
+      "name": "Sausage",
+      "model": "RacerBot-5",
+      "status": "standby",
+      "battery": 100,
+      "location": {
+        "lat": 43.0280,
+        "lng": -87.9711
+      },
+      "lastMaintenance": "2024-07-15"
+    },
+    {
+      "id": "HRM029",
+      "name": "Fonzie",
+      "model": "CoolBot-1000",
+      "status": "active",
+      "battery": 76,
+      "location": {
+        "lat": 43.0278,
+        "lng": -87.9144
+      },
+      "lastMaintenance": "2024-07-16"
+    }
+  ]
+}
