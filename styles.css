@@ -77,8 +77,8 @@ main {
     right: 0;
     bottom: 0; /* Stick to the bottom */
     overflow-y: auto; /* Allow scrolling */
+    z-index: 1000; /* Ensure it's above the map */
 }
-
 
 /* CSS Section 5 - Header */
 header {
@@ -218,6 +218,7 @@ header h1 {
     padding: 10px;
     border-bottom: 1px solid var(--text-secondary);
     cursor: pointer;
+    position: relative;
 }
 
 .robot-item:first-child {
@@ -226,6 +227,26 @@ header h1 {
 
 .robot-item:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.robot-item .unselect-icon {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1em;
+    color: var(--text-secondary);
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.robot-item.selected .unselect-icon {
+    display: block;
+}
+
+.robot-item .unselect-icon:hover {
+    opacity: 1;
 }
 
 /* CSS Section 9 - Search Input */
@@ -370,6 +391,12 @@ header h1 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, box-shadow 0.2s;
+    position: fixed; /* Fix the details panel position */
+    top: var(--header-height); /* Adjust for header height */
+    right: 0;
+    bottom: 0; /* Stick to the bottom */
+    overflow-y: auto; /* Allow scrolling */
+    z-index: 1000; /* Ensure it's above the map */
 }
 
 #robot-image {
