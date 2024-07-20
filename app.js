@@ -159,27 +159,36 @@ function initMap() {
   }
   
 // 11. Display Robots in Sidebar
+let robotMarkers = {};
+
 function displayRobots(robots) {
     const robotList = document.getElementById('robot-list');
     robotList.innerHTML = '';
     robots.forEach(robot => {
-      const li = document.createElement('li');
-      li.className = 'robot-item';
-      
-      const statusIcon = getStatusIcon(robot.status);
-      const statusChip = getStatusChip(robot.status);
-      
-      li.innerHTML = `
-        <h3>${robot.name}</h3>
-        <p>Model: ${robot.model}</p>
-        <div class="robot-status">
-          <i class="icon ${statusIcon}"></i>
-          <span class="status-chip ${statusChip}">${robot.status}</span>
-          <span class="battery-chip">${robot.battery}%</span>
-        </div>
-      `;
-      li.addEventListener('click', () => selectRobot(robot));
-      robotList.appendChild(li);
+        const li = document.createElement('li');
+        li.className = 'robot-item';
+        li.setAttribute('data-id', robot.id);
+        
+        const statusIcon = getStatusIcon(robot.status);
+        const statusChip = getStatusChip(robot.status);
+        
+        li.innerHTML = `
+            <h3>${robot.name}</h3>
+            <p>Model: ${robot.model}</p>
+            <div class="robot-status">
+                <i class="icon ${statusIcon}"></i>
+                <span class="status-chip ${statusChip}">${robot.status}</span>
+                <span class="battery-chip">${robot.battery}%</span>
+            </div>
+            <i class="unselect-icon fas fa-times"></i>
+        `;
+        li.addEventListener('click', () => selectRobot(robot));
+        li.querySelector('.unselect-icon').addEventListener('click', (e) => {
+            e.stopPropagation();
+            unselectRobot();
+        });
+        robotList.appendChild(li);
+        robotMarkers[robot.id] = createMarker(robot);
     });
   }
   
@@ -206,10 +215,28 @@ function displayRobots(robots) {
   
   // 12. Add Robots to Map
   function addRobotsToMap(robots) {
+    const markers = [];
     robots.forEach(robot => {
-      const marker = L.marker([robot.location.lat, robot.location.lng]).addTo(map);
-      marker.bindPopup(`<b>${robot.name}</b><br>Status: ${robot.status}<br>Battery: ${robot.battery}%`);
+      const marker = createMarker(robot);
+      markers.push(marker);
     });
+  }
+
+  function createMarker(robot) {
+    const { lat, lng } = robot.location;
+    const marker = L.marker([lat, lng]).addTo(map);
+    
+    marker.bindPopup(`
+        <b>${robot.name}</b><br>
+        Status: ${robot.status}<br>
+        Battery: ${robot.battery}%
+    `);
+
+    marker.on('click', () => {
+        selectRobot(robot);
+    });
+
+    return marker;
   }
   
 // 13. Select Robot
@@ -217,12 +244,45 @@ function selectRobot(robot) {
     const { lat, lng } = robot.location;
     map.setView([lat, lng], 14);
 
-    // Check if the image exists and update the robot details
+    // Remove 'selected' class from all robot items
+    document.querySelectorAll('.robot-item').forEach(item => {
+        item.classList.remove('selected');
+    });
+
+    // Add 'selected' class to the corresponding robot item in the side panel
+    const selectedRobotItem = document.querySelector(`.robot-item[data-id="${robot.id}"]`);
+    if (selectedRobotItem) {
+        selectedRobotItem.classList.add('selected');
+    }
+
+    // Update robot details in the right panel
+    updateRobotDetails(robot);
+
+    // Show robot details
+    const robotDetails = document.getElementById('robot-details');
+    robotDetails.classList.remove('hidden');
+    robotDetails.style.display = 'flex';
+
+    // Open popup for the selected robot
+    const marker = robotMarkers[robot.id];
+    if (marker) {
+        marker.openPopup();
+    }
+}
+
+function updateRobotDetails(robot) {
+    document.getElementById('robot-name').textContent = robot.name;
+    document.getElementById('robot-status').textContent = `Status: ${robot.status}`;
+    document.getElementById('robot-battery').textContent = `Battery: ${robot.battery}%`;
+    document.getElementById('robot-model').textContent = `Model: ${robot.model}`;
+    
+    // Update other details as needed
+    
+    // Check if the image exists and update it
     const robotImage = document.getElementById('robot-image');
     const imagePathWebp = `images/${robot.id}.webp`;
     const imagePathJpg = `images/${robot.id}.jpg`;
 
-    // Check if the .webp image exists
     fetch(imagePathWebp)
         .then(response => {
             if (response.ok) {
@@ -230,51 +290,31 @@ function selectRobot(robot) {
                 robotImage.alt = robot.name;
                 robotImage.classList.remove('hidden');
             } else {
-                // If .webp doesn't exist, check for .jpg
-                fetch(imagePathJpg)
-                    .then(response => {
-                        if (response.ok) {
-                            robotImage.src = imagePathJpg;
-                            robotImage.alt = robot.name;
-                            robotImage.classList.remove('hidden');
-                        } else {
-                            robotImage.classList.add('hidden');
-                        }
-                    })
-                    .catch(() => {
-                        robotImage.classList.add('hidden');
-                    });
+                return fetch(imagePathJpg);
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                robotImage.src = imagePathJpg;
+                robotImage.alt = robot.name;
+                robotImage.classList.remove('hidden');
+            } else {
+                robotImage.classList.add('hidden');
             }
         })
         .catch(() => {
-            // If fetch fails for .webp, check for .jpg
-            fetch(imagePathJpg)
-                .then(response => {
-                    if (response.ok) {
-                        robotImage.src = imagePathJpg;
-                        robotImage.alt = robot.name;
-                        robotImage.classList.remove('hidden');
-                    } else {
-                        robotImage.classList.add('hidden');
-                    }
-                })
-                .catch(() => {
-                    robotImage.classList.add('hidden');
-                });
+            robotImage.classList.add('hidden');
         });
+}
 
-    document.getElementById('robot-name').textContent = robot.name;
-    document.getElementById('robot-status').textContent = `Status: ${robot.status}`;
-    document.getElementById('robot-battery').textContent = `Battery: ${robot.battery}%`;
-    document.getElementById('robot-model').textContent = `Model: ${robot.model}`;
-    document.getElementById('robot-last-maintenance').textContent = `Last Maintenance: ${robot.lastMaintenance}`;
-
-    // Show robot details
-    document.getElementById('robot-details').classList.remove('hidden');
-
-    // Open popup for the selected robot
-    const marker = L.marker([lat, lng]).addTo(map);
-    marker.bindPopup(`<b>${robot.name}</b><br>Status: ${robot.status}<br>Battery: ${robot.battery}%`).openPopup();
+function unselectRobot() {
+    document.querySelectorAll('.robot-item').forEach(item => {
+        item.classList.remove('selected');
+    });
+    const robotDetails = document.getElementById('robot-details');
+    robotDetails.classList.add('hidden');
+    robotDetails.style.display = 'none';
+    map.setView([41.8781, -87.6298], 11); // Reset map view
 }
 
 
