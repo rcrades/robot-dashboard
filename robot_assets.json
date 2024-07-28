@@ -349,20 +349,20 @@
       "lastMaintenance": "2024-07-16"
     },
     {
-      "id": "HRM030",
-      "name": "Timber",
+      "id": "HRM040",
+      "name": "TimberRattler",
       "model": "SportsBot-1000",
       "status": "active",
       "battery": 85,
       "location": {
-        "lat": 44.2619,
-        "lng": -88.4154
+        "lat": 44.2683,
+        "lng": -88.4644
       },
-      "lastMaintenance": "2024-07-17"
+      "lastMaintenance": "2024-07-27"
     },
     {
-      "id": "HRM031",
-      "name": "BrettBot",
+      "id": "HRM041",
+      "name": "BrettHouseBot",
       "model": "HomeAssistant-2000",
       "status": "active",
       "battery": 90,
@@ -370,103 +370,103 @@
         "lat": 44.2619,
         "lng": -88.4154
       },
-      "lastMaintenance": "2024-07-18"
+      "lastMaintenance": "2024-07-28"
     },
     {
-      "id": "HRM032",
-      "name": "Fox",
+      "id": "HRM042",
+      "name": "FoxValley",
       "model": "ExplorerBot-2000",
       "status": "active",
       "battery": 80,
       "location": {
-        "lat": 44.2619,
-        "lng": -88.4154
+        "lat": 44.2610,
+        "lng": -88.4150
       },
-      "lastMaintenance": "2024-07-19"
+      "lastMaintenance": "2024-07-29"
     },
     {
-      "id": "HRM033",
-      "name": "Badger",
+      "id": "HRM043",
+      "name": "BadgerBot",
       "model": "SecurityBot-3000",
       "status": "active",
       "battery": 75,
       "location": {
-        "lat": 44.2619,
-        "lng": -88.4154
+        "lat": 44.2700,
+        "lng": -88.4000
       },
-      "lastMaintenance": "2024-07-20"
+      "lastMaintenance": "2024-07-30"
     },
     {
-      "id": "HRM034",
-      "name": "Cheese",
+      "id": "HRM044",
+      "name": "CheeseBot",
       "model": "FoodBot-1000",
       "status": "active",
       "battery": 88,
       "location": {
-        "lat": 44.2619,
-        "lng": -88.4154
+        "lat": 44.2500,
+        "lng": -88.4200
       },
-      "lastMaintenance": "2024-07-21"
+      "lastMaintenance": "2024-07-31"
     },
     {
-      "id": "HRM035",
-      "name": "Pack",
+      "id": "HRM045",
+      "name": "PackBot",
       "model": "SportsBot-2000",
       "status": "active",
       "battery": 82,
       "location": {
-        "lat": 44.2619,
-        "lng": -88.4154
+        "lat": 44.2400,
+        "lng": -88.4300
       },
-      "lastMaintenance": "2024-07-22"
+      "lastMaintenance": "2024-08-01"
     },
     {
-      "id": "HRM036",
-      "name": "Lambeau",
+      "id": "HRM046",
+      "name": "LambeauBot",
       "model": "FanBot-1000",
       "status": "active",
       "battery": 77,
       "location": {
-        "lat": 44.2619,
-        "lng": -88.4154
+        "lat": 44.2300,
+        "lng": -88.4400
       },
-      "lastMaintenance": "2024-07-23"
+      "lastMaintenance": "2024-08-02"
     },
     {
-      "id": "HRM037",
-      "name": "Winnebago",
+      "id": "HRM047",
+      "name": "WinnebagoBot",
       "model": "ExplorerBot-3000",
       "status": "active",
       "battery": 79,
       "location": {
-        "lat": 44.2619,
-        "lng": -88.4154
+        "lat": 44.2200,
+        "lng": -88.4500
       },
-      "lastMaintenance": "2024-07-24"
+      "lastMaintenance": "2024-08-03"
     },
     {
-      "id": "HRM038",
-      "name": "FoxRiver",
+      "id": "HRM048",
+      "name": "FoxRiverBot",
       "model": "WaterBot-1000",
       "status": "active",
       "battery": 83,
       "location": {
-        "lat": 44.2619,
-        "lng": -88.4154
+        "lat": 44.2100,
+        "lng": -88.4600
       },
-      "lastMaintenance": "2024-07-25"
+      "lastMaintenance": "2024-08-04"
     },
     {
-      "id": "HRM039",
-      "name": "Houdini",
+      "id": "HRM049",
+      "name": "HoudiniBot",
       "model": "MagicBot-2000",
       "status": "active",
       "battery": 86,
       "location": {
-        "lat": 44.2619,
-        "lng": -88.4154
+        "lat": 44.2000,
+        "lng": -88.4700
       },
-      "lastMaintenance": "2024-07-26"
+      "lastMaintenance": "2024-08-05"
     }
   ]
 }
