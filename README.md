@@ -1,11 +1,3 @@
-// Natviate to area
-
-    cd /Users/ryanrademann/Documents/GitHub/robot-dashboard
-
-// Fire Up Server
-
-     python3 -m http.server 8000
-
 # Robot Dashboard
 
 ## Overview
@@ -34,13 +26,14 @@ Our mapping system is a core feature of the Robot Dashboard, offering:
 4. User Interaction: Operators can send commands back to the robots through the interface.
 
 ## Technologies Used
-- Frontend: HTML5, CSS3, JavaScript (React.js)
-- Backend: Python (Flask)
-- Database: PostgreSQL
+- Frontend: HTML5, CSS3, JavaScript
+- Backend: None (Static site)
+- Database: None (Static JSON files)
 - WebSocket for real-time communication
 
 ## Getting Started
-(Startup instructions are provided at the top of this README)
+- if local, run `python3 -m http.server 8000`
+- if deployed, navigate to `https://robot-dashboard-eight.vercel.app/
 
 ## Contributing
 Please read CONTRIBUTING.md for details on our code of conduct and the process for submitting pull requests.

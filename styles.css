@@ -127,12 +127,12 @@ header {
 }
 
 .header-left {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
 }
 
 .header-center {
     flex: 1 1 auto;
-    justify-content: center;
+    margin: 0 10px;
 }
 
 .header-right {
@@ -140,7 +140,7 @@ header {
 }
 
 header h1 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
@@ -157,31 +157,55 @@ header h1 {
 }
 
 #search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    position: relative;
+    height: 100%; /* Ensure it takes the full height of the header */
+    position: relative; /* Position relative for absolute positioning of the button */
 }
 
 #robot-search {
-    width: 100%;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: var(--text-primary);
+    width: 100%; /* Use full width of the container */
+    padding: 5px 40px 5px 8px; /* Add padding on the right to accommodate the button */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
     font-size: 16px;
-    transition: all 0.3s ease;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)), var(--header-gradient);
+    color: var(--text-primary);
+    transition: border-color 0.3s, background-color 0.3s;
+    margin: 0; /* Remove margin to ensure equal space above and below */
+    height: auto; /* Let the height be determined by the padding */
 }
 
 #robot-search:focus {
+    border-color: #4a90e2;
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque on focus */
     outline: none;
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-#robot-search::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+#clear-search {
+    position: absolute; /* Position the button inside the search container */
+    right: 10px; /* Position it to the right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    background: rgba(0, 0, 0, 0.5); /* Black glass effect */
+    color: var(--text-primary);
+    border: none;
+    border-radius: 50%; /* Make it circular */
+    width: 24px; /* Set width */
+    height: 24px; /* Set height */
+    font-size: 14px; /* Adjust size of the "X" */
+    display: flex;
+    align-items: center; /* Center the "X" vertically */
+    justify-content: center; /* Center the "X" horizontally */
+    transition: background-color 0.3s;
+}
+
+#clear-search:hover {
+    background: rgba(255, 255, 255, 0.2); /* Change background on hover */
 }
 
 /* CSS Section 6 - Menu Button */
@@ -278,20 +302,6 @@ header h1 {
 
 .robot-item .unselect-icon:hover {
     opacity: 1;
-}
-
-/* CSS Section 9 - Search Input */
-#search-container {
-    margin-bottom: 20px;
-}
-
-#robot-search {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    border-radius: 4px;
 }
 
 /* CSS Section 10 - Map Container */

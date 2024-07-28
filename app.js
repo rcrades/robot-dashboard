@@ -86,6 +86,13 @@ const particleConfig = {
     initParticles();
     initMap();
     loadRobots();
+    const searchBar = document.getElementById('robot-search');
+    if (searchBar) {
+        console.log('Search bar found');
+        searchBar.style.backgroundColor = 'red'; // Change background to red for testing
+    } else {
+        console.log('Search bar not found');
+    }
   });
   
   // 7. Window Resize Handler
@@ -349,5 +356,10 @@ document.getElementById('menu-button').addEventListener('click', toggleSidebar);
       const robotName = item.textContent.toLowerCase();
       item.style.display = robotName.includes(searchTerm) ? 'block' : 'none';
     });
+  });
+  
+  // Clear search button functionality
+  document.getElementById('clear-search').addEventListener('click', function() {
+    document.getElementById('robot-search').value = ''; // Clear the input field
   });
   
