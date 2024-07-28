@@ -347,6 +347,126 @@
         "lng": -87.9144
       },
       "lastMaintenance": "2024-07-16"
+    },
+    {
+      "id": "HRM030",
+      "name": "Timber",
+      "model": "SportsBot-1000",
+      "status": "active",
+      "battery": 85,
+      "location": {
+        "lat": 44.2619,
+        "lng": -88.4154
+      },
+      "lastMaintenance": "2024-07-17"
+    },
+    {
+      "id": "HRM031",
+      "name": "BrettBot",
+      "model": "HomeAssistant-2000",
+      "status": "active",
+      "battery": 90,
+      "location": {
+        "lat": 44.2619,
+        "lng": -88.4154
+      },
+      "lastMaintenance": "2024-07-18"
+    },
+    {
+      "id": "HRM032",
+      "name": "Fox",
+      "model": "ExplorerBot-2000",
+      "status": "active",
+      "battery": 80,
+      "location": {
+        "lat": 44.2619,
+        "lng": -88.4154
+      },
+      "lastMaintenance": "2024-07-19"
+    },
+    {
+      "id": "HRM033",
+      "name": "Badger",
+      "model": "SecurityBot-3000",
+      "status": "active",
+      "battery": 75,
+      "location": {
+        "lat": 44.2619,
+        "lng": -88.4154
+      },
+      "lastMaintenance": "2024-07-20"
+    },
+    {
+      "id": "HRM034",
+      "name": "Cheese",
+      "model": "FoodBot-1000",
+      "status": "active",
+      "battery": 88,
+      "location": {
+        "lat": 44.2619,
+        "lng": -88.4154
+      },
+      "lastMaintenance": "2024-07-21"
+    },
+    {
+      "id": "HRM035",
+      "name": "Pack",
+      "model": "SportsBot-2000",
+      "status": "active",
+      "battery": 82,
+      "location": {
+        "lat": 44.2619,
+        "lng": -88.4154
+      },
+      "lastMaintenance": "2024-07-22"
+    },
+    {
+      "id": "HRM036",
+      "name": "Lambeau",
+      "model": "FanBot-1000",
+      "status": "active",
+      "battery": 77,
+      "location": {
+        "lat": 44.2619,
+        "lng": -88.4154
+      },
+      "lastMaintenance": "2024-07-23"
+    },
+    {
+      "id": "HRM037",
+      "name": "Winnebago",
+      "model": "ExplorerBot-3000",
+      "status": "active",
+      "battery": 79,
+      "location": {
+        "lat": 44.2619,
+        "lng": -88.4154
+      },
+      "lastMaintenance": "2024-07-24"
+    },
+    {
+      "id": "HRM038",
+      "name": "FoxRiver",
+      "model": "WaterBot-1000",
+      "status": "active",
+      "battery": 83,
+      "location": {
+        "lat": 44.2619,
+        "lng": -88.4154
+      },
+      "lastMaintenance": "2024-07-25"
+    },
+    {
+      "id": "HRM039",
+      "name": "Houdini",
+      "model": "MagicBot-2000",
+      "status": "active",
+      "battery": 86,
+      "location": {
+        "lat": 44.2619,
+        "lng": -88.4154
+      },
+      "lastMaintenance": "2024-07-26"
     }
   ]
 }
